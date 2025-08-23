@@ -3,6 +3,7 @@ import Student from "./BaiTap/bai2";
 import Car from "./BaiTap/bai3";
 import Rectangle from "./BaiTap/bai4";
 import BankAccount from "./BaiTap/bai5";
+import Book from "./BaiTap/bai6";
 
 const person = new Person("Alice", 25);
 person.printScreen();
@@ -24,3 +25,7 @@ console.log("Số tiền có trong ngân hàng là ",account);
 account.deposit(500);    
 account.withdraw(200);   
 console.log("Số dư cuối:", account.getBalance());
+
+console.log("Day la bai 6");
+const t = new Book("Nguyen ngoc anh", "Thach lam",2015);
+t.printf();

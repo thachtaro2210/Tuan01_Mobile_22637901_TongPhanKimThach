@@ -1,6 +1,24 @@
 "use strict";
-function hello(name) {
-    return `Hello, ${name}!`;
-}
-console.log(hello("200Lab 1 hello"));
-console.log(hello("200Lab"));
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const bai1_1 = __importDefault(require("./BaiTap/bai1"));
+const bai2_1 = __importDefault(require("./BaiTap/bai2"));
+const bai3_1 = __importDefault(require("./BaiTap/bai3"));
+const bai4_1 = __importDefault(require("./BaiTap/bai4"));
+const bai5_1 = __importDefault(require("./BaiTap/bai5"));
+const person = new bai1_1.default("Alice", 25);
+person.printScreen();
+const student = new bai2_1.default("Taki", 25, 10);
+student.displayInfo();
+const car = new bai3_1.default("Lambo", 1, "taki");
+car.printfCar();
+const rectangle = new bai4_1.default(10, 20);
+rectangle.displayInfo();
+console.log("Day la ngan hang");
+const account = new bai5_1.default(1000);
+console.log("Số tiền có trong ngân hàng là ", account);
+account.deposit(500);
+account.withdraw(200);
+console.log("Số dư cuối:", account.getBalance());
