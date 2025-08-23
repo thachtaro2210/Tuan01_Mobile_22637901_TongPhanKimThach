@@ -1,4 +1,5 @@
 import Person from "./BaiTap/bai1";
+import TaiKhoan from "./BaiTap/Bai10";
 import Student from "./BaiTap/bai2";
 import Car from "./BaiTap/bai3";
 import Rectangle from "./BaiTap/bai4";
@@ -34,3 +35,6 @@ t.printf();
 
 const sp = new SanPham("Test", 0); 
 sp.sosanh(); 
+
+const t1 = new TaiKhoan("2405","Tao a ba",100000);
+t1.xemSoDu();

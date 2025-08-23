@@ -7,8 +7,9 @@ class Book {
         this.year = year;
     }
     printf() {
-        console.log();
-        console.log();
+        console.log(`Tieu de : ${this.tittle}`);
+        console.log(`Tac gia : ${this.author}`);
+        console.log(`Nam : ${this.author}`);
     }
 }
 exports.default = Book;
