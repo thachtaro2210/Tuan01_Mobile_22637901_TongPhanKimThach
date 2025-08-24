@@ -7,6 +7,7 @@ import { Cats, Dogs } from "./BaiTap/bai19";
 import Student from "./BaiTap/bai2";
 import { Stack } from "./BaiTap/bai22";
 import Car from "./BaiTap/bai3";
+import { School, Students, Teacher } from "./BaiTap/bai30";
 import Rectangle from "./BaiTap/bai4";
 import BankAccount from "./BaiTap/bai5";
 import Book from "./BaiTap/bai6";
@@ -100,3 +101,14 @@ console.log(stack.pop());
 console.log(stack.isEmpty()); 
 console.log(stack.pop());     
 console.log(stack.isEmpty()); 
+
+
+const school = new School();
+
+school.addTeacher(new Teacher("Alice", "Math"));
+school.addTeacher(new Teacher("Bob", "Physics"));
+
+school.addStudent(new Students("Charlie", 10));
+school.addStudent(new Students("Diana", 11));
+
+school.displayInfo();

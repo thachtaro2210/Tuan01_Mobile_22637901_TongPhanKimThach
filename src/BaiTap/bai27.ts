@@ -6,7 +6,7 @@ class Person {
   }
 }
 
-class Teacher extends Person {
+class Teachers extends Person {
   subject: string;
 
   constructor(name: string, subject: string) {
