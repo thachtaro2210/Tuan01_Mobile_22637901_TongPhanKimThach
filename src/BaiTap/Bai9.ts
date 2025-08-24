@@ -1,7 +1,7 @@
 
-interface Animal {
+export interface Animal {
   name: string;
-  sound(): void; 
+  sound(): void;
 }
 
 
@@ -29,9 +29,4 @@ class Cat implements Animal {
   }
 }
 
-// Usage
-const dog: Animal = new Dog("Buddy");
-const cat: Animal = new Cat("Kitty");
 
-dog.sound(); 
-cat.sound(); 

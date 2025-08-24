@@ -5,6 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const bai1_1 = __importDefault(require("./BaiTap/bai1"));
 const Bai10_1 = __importDefault(require("./BaiTap/Bai10"));
+const Bai11_1 = require("./BaiTap/Bai11");
 const bai2_1 = __importDefault(require("./BaiTap/bai2"));
 const bai3_1 = __importDefault(require("./BaiTap/bai3"));
 const bai4_1 = __importDefault(require("./BaiTap/bai4"));
@@ -32,3 +33,9 @@ const sp = new bai8_1.default("Test", 0);
 sp.sosanh();
 const t1 = new Bai10_1.default("2405", "Tao a ba", 100000);
 t1.xemSoDu();
+const dog = new Bai11_1.Dog("Chó Đốm");
+const cat = new Bai11_1.Cat("Mèo Mun");
+dog.sound();
+cat.sound();
+dog.bark();
+cat.meow();

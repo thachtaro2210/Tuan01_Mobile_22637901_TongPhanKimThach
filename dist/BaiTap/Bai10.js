@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class TaiKhoan {
-    constructor(soTaiKhoan, chuTaiKhoan, soDuBanDau) {
+    constructor(soTaiKhoan, chuTaiKhoan, soDu) {
         this.soTaiKhoan = soTaiKhoan;
         this.chuTaiKhoan = chuTaiKhoan;
-        this.soDu = soDuBanDau;
+        this.soDu = soDu;
     }
     xemSoDu() {
         return this.soDu;

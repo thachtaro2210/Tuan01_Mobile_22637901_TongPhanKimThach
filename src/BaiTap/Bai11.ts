@@ -1,6 +1,17 @@
-import { AnimalBase } from "./Bai9";
+import { Animal } from "./Bai9";
+export class AnimalBase implements Animal {
+  name: string;
 
-class Dog extends AnimalBase {
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  // method mặc định, sẽ override ở class con
+  sound(): void {
+    console.log(`${this.name} phát ra âm thanh.`);
+  }
+}
+export  class Dog extends AnimalBase {
     constructor(name: string) {
         super(name);
     }
@@ -14,7 +25,7 @@ class Dog extends AnimalBase {
     }
 }
 
-class Cat extends AnimalBase {
+ export  class Cat extends AnimalBase {
     constructor(name: string) {
         super(name);
     }
