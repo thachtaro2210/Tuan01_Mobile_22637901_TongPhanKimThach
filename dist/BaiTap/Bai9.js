@@ -16,8 +16,3 @@ class Cat {
         console.log(`${this.name} says: Meow!`);
     }
 }
-// Usage
-const dog = new Dog("Buddy");
-const cat = new Cat("Kitty");
-dog.sound();
-cat.sound();
