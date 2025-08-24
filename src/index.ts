@@ -5,6 +5,7 @@ import { Developer, Manager } from "./BaiTap/bai14";
 import { Books, Library, User } from "./BaiTap/Bai15";
 import { Cats, Dogs } from "./BaiTap/bai19";
 import Student from "./BaiTap/bai2";
+import { Stack } from "./BaiTap/bai22";
 import Car from "./BaiTap/bai3";
 import Rectangle from "./BaiTap/bai4";
 import BankAccount from "./BaiTap/bai5";
@@ -86,3 +87,16 @@ const dogs = new Dogs();
 const cats = new Cats();
 dogs.makeSound();
 cats.makeSound();
+
+
+const stack = new Stack<number>();
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+console.log(stack.peek());   
+console.log(stack.pop());     
+console.log(stack.pop());     
+console.log(stack.isEmpty()); 
+console.log(stack.pop());     
+console.log(stack.isEmpty()); 
