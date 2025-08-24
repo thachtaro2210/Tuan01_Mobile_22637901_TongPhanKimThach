@@ -1,6 +1,8 @@
 import Person from "./BaiTap/bai1";
 import TaiKhoan from "./BaiTap/Bai10";
 import { Cat, Dog } from "./BaiTap/Bai11";
+import { Developer, Manager } from "./BaiTap/bai14";
+import { Books, Library, User } from "./BaiTap/Bai15";
 import Student from "./BaiTap/bai2";
 import Car from "./BaiTap/bai3";
 import Rectangle from "./BaiTap/bai4";
@@ -50,3 +52,30 @@ cat.sound();
 
 dog.bark(); 
 cat.meow();  
+
+const manager = new Manager("Alice", 5000);
+const developer = new Developer("Bob", 4000);
+
+manager.work();      
+manager.manageTeam();
+
+developer.work();    
+developer.writeCode();
+
+
+const library = new Library();
+
+const book1 = new Books("Clean Code", "Robert C. Martin");
+const book2 = new Books("The Pragmatic Programmer", "Andrew Hunt");
+
+const user1 = new User("Alice");
+const user2 = new User("Bob");
+
+library.addBook(book1);
+library.addBook(book2);
+
+library.addUser(user1);
+library.addUser(user2);
+
+library.listBooks();
+library.listUsers();
