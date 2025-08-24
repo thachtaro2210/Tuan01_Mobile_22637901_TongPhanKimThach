@@ -3,6 +3,7 @@ import TaiKhoan from "./BaiTap/Bai10";
 import { Cat, Dog } from "./BaiTap/Bai11";
 import { Developer, Manager } from "./BaiTap/bai14";
 import { Books, Library, User } from "./BaiTap/Bai15";
+import { Cats, Dogs } from "./BaiTap/bai19";
 import Student from "./BaiTap/bai2";
 import Car from "./BaiTap/bai3";
 import Rectangle from "./BaiTap/bai4";
@@ -79,3 +80,9 @@ library.addUser(user2);
 
 library.listBooks();
 library.listUsers();
+
+
+const dogs = new Dogs();
+const cats = new Cats();
+dogs.makeSound();
+cats.makeSound();
